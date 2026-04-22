@@ -110,7 +110,7 @@
     }
 
     // --- Stagger siblings ---
-    document.querySelectorAll('.service-card, .cred-item').forEach(function (el, i) {
+    document.querySelectorAll('.service-card, .cred-item, .testimonial').forEach(function (el, i) {
         el.style.transitionDelay = (i % 4) * 0.1 + 's';
     });
 })();

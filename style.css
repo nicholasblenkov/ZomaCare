@@ -501,6 +501,63 @@ a:hover {
 }
 
 /* ===========================================
+   SOCIAL PROOF
+   =========================================== */
+.social-proof {
+    padding: var(--section-y) 0;
+    background: var(--warm-cream);
+    text-align: center;
+}
+.social-proof .section-title {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.testimonials {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--gap);
+    margin-top: 2.5rem;
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.testimonial {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 2rem 1.75rem;
+    text-align: left;
+    position: relative;
+    transition: transform 0.3s var(--ease), box-shadow 0.3s var(--ease);
+}
+.testimonial:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 32px rgba(0,96,141,0.08);
+}
+.testimonial__stars {
+    color: #f5a623;
+    font-size: 1.1rem;
+    letter-spacing: 0.1em;
+    margin-bottom: 0.75rem;
+}
+.testimonial__quote p {
+    font-family: var(--font-display);
+    font-size: 1rem;
+    font-style: italic;
+    line-height: 1.6;
+    color: var(--slate);
+}
+.testimonial__author {
+    margin-top: 1.25rem;
+    font-family: var(--font-body);
+    font-weight: 500;
+    font-size: 0.85rem;
+    color: var(--mist);
+    letter-spacing: 0.05em;
+}
+
+/* ===========================================
    WELCOME
    =========================================== */
 .welcome {
@@ -962,6 +1019,27 @@ a:hover {
 }
 .footer__contact-col a:hover {
     color: var(--white);
+}
+.footer__social {
+    display: flex;
+    gap: 0.75rem;
+    margin-top: 1rem;
+}
+.footer__social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 6px;
+    color: rgba(255,255,255,0.7);
+    transition: all 0.25s;
+}
+.footer__social-link:hover {
+    border-color: rgba(255,255,255,0.5);
+    color: var(--white);
+    background: rgba(255,255,255,0.1);
 }
 .footer__links-col ul {
     list-style: none;
